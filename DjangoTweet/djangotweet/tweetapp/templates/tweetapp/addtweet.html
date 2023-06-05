@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="container" style="width: 50%;" >
+      
+        <div class="mb-3">
+        <label for="massage" class="form-label">Massage</label>
+        <input type="text" class="form-control" id="massage" name="massage">
+        </div>
+        <button type="submit" class="btn btn-primary">Send Tweet</button>
+    </div>  
+</form>
+
+
+{% endblock %}
+
